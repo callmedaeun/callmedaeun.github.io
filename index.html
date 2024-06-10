@@ -5,15 +5,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Wellcome to my page!</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
 	<style>
 		*{
+			font-family: "Noto Sans KR", sans-serif;
+			font-weight: 100;
 			background-color: #0c0c0c;
 			color: #ffffff;
-		}
-		
-		ul{
-			list-style: none;
-		}
+		}	
 
 		.top-menu-layer{
 			width: 70vw;
@@ -21,6 +24,10 @@
 			margin: 10px auto;
 			border: 1px solid #ffffff;
 			border-radius: 10px;
+		}
+
+		.top-menu-layer ul{
+			list-style: none;
 		}
 
 		.menu-layer{
@@ -31,18 +38,51 @@
 		}
 
 		.info-box{
-			margin: 10px;
+			margin: 12px;
 		}
 
 		.name-box{
-			margin: 10px 0 5px 0;
 			font-size: 18px;
+			font-weight: 400;
+			margin: 10px 0 0 0;
 		}
 
 		.email-box{
-			color: #828282;
 			font-size: 14px;
-			margin-bottom: 5px;
+			color: #828282;
+			margin: 0 0 10px 5px;
+		}
+
+		.thing{
+			font-size: 16px;
+			border-top: 1px solid #ffffff;
+			padding: 5px;
+		}
+
+		.projecting-layer{
+			width: 70vw;
+			margin: 10px auto;
+			border: 1px solid #ffffff;
+			border-radius: 10px;
+			padding: 14px 0;
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		.title{
+			font-size: 17px;
+			font-weight: 400;
+			margin: 0 20px;
+		}
+
+		.personal{
+			width: 550px;
+			border-left: 1px solid #ffffff;
+		}
+		.collabo{
+			width: 550px;
+			border-left: 1px solid #ffffff;
+
 		}
 	</style>
 </head>
@@ -62,12 +102,29 @@
 		<div class="info-box">
 			<div class="name-box">정다은 Jeoun Da Eun</div>
 			<div class="email-box">suga5586ju@dongyang.ac.kr</div>
-			<div class="any">
+			<div class="thing">
 				기술스택 : HTML, CSS<br>
-				대학정보 : 동양미래대학교 컴퓨터소프트웨어학과 2024년 입학<br>
+				univ : 동양미래대학교 컴퓨터소프트웨어학과 2024년 입학<br>
 				기술개발 경험 : HTML 실습 과제<br>
 				관심 기술분야 : HTML, CSS, JS<br>
 			</div>
+		</div>
+	</div>
+
+	<div class="projecting-layer">
+		<div class="personal">
+			<div class="title">개인 프로젝트</div>
+			<ul>
+				<li><a href="#>"></a></li>
+				<li><a href="#>"></a></li>
+			</ul>
+		</div>
+		<div class="collabo">
+			<div class="title">공동 프로젝트</div>
+			<ul>
+				<li><a href="#>"></a></li>
+				<li><a href="#>"></a></li>
+			</ul>
 		</div>
 	</div>
 </body>
